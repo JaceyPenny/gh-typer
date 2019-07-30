@@ -1,2 +1,5 @@
-from xbox import Joystick
+from src.ui.application import Application
 
+if __name__ == "__main__":
+    app = Application()
+    app.start()

@@ -1,7 +1,7 @@
 import sys
-import src.util.dpi as dpi
 import src.xbox as xbox
-from PyQt5.QtWidgets import QApplication, QWidget
+from src.ui.main import *
+from PyQt5.QtWidgets import QApplication
 
 
 class Application:
@@ -23,8 +23,5 @@ class Application:
         self.app.exec_()
 
     def init_window(self):
-        self.window = QWidget()
-        self.window.resize(dpi.dp(500), dpi.dp(500))
-        self.window.move(dpi.dp(300), dpi.dp(300))
-        self.window.setWindowTitle("GH Typer")
+        self.window = MainWindow()
         self.window.show()
