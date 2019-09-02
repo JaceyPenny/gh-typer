@@ -51,6 +51,7 @@ class Button(Enum):
 
 class ViewModel:
   series: List[Button] = []
+  current_text = ""
 
   def __init__(self):
     pass

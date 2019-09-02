@@ -57,4 +57,5 @@ class Application:
 
   def init_window(self):
     self.window = MainWindow(self)
+    self.window.load_dictionary()
     self.window.show()
